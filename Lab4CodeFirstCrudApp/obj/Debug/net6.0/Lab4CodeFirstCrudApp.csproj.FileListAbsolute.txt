@@ -1,0 +1,14 @@
+D:\LabAssignments\Lab4CodeFirstCrudApp\Lab4CodeFirstCrudApp\bin\Debug\net6.0\Lab4CodeFirstCrudApp.deps.json
+D:\LabAssignments\Lab4CodeFirstCrudApp\Lab4CodeFirstCrudApp\bin\Debug\net6.0\Lab4CodeFirstCrudApp.runtimeconfig.json
+D:\LabAssignments\Lab4CodeFirstCrudApp\Lab4CodeFirstCrudApp\bin\Debug\net6.0\Lab4CodeFirstCrudApp.dll
+D:\LabAssignments\Lab4CodeFirstCrudApp\Lab4CodeFirstCrudApp\bin\Debug\net6.0\Lab4CodeFirstCrudApp.pdb
+D:\LabAssignments\Lab4CodeFirstCrudApp\Lab4CodeFirstCrudApp\obj\Debug\net6.0\Lab4CodeFirstCrudApp.csproj.AssemblyReference.cache
+D:\LabAssignments\Lab4CodeFirstCrudApp\Lab4CodeFirstCrudApp\obj\Debug\net6.0\Lab4CodeFirstCrudApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\LabAssignments\Lab4CodeFirstCrudApp\Lab4CodeFirstCrudApp\obj\Debug\net6.0\Lab4CodeFirstCrudApp.AssemblyInfoInputs.cache
+D:\LabAssignments\Lab4CodeFirstCrudApp\Lab4CodeFirstCrudApp\obj\Debug\net6.0\Lab4CodeFirstCrudApp.AssemblyInfo.cs
+D:\LabAssignments\Lab4CodeFirstCrudApp\Lab4CodeFirstCrudApp\obj\Debug\net6.0\Lab4CodeFirstCrudApp.csproj.CoreCompileInputs.cache
+D:\LabAssignments\Lab4CodeFirstCrudApp\Lab4CodeFirstCrudApp\obj\Debug\net6.0\Lab4CodeFirstCrudApp.dll
+D:\LabAssignments\Lab4CodeFirstCrudApp\Lab4CodeFirstCrudApp\obj\Debug\net6.0\refint\Lab4CodeFirstCrudApp.dll
+D:\LabAssignments\Lab4CodeFirstCrudApp\Lab4CodeFirstCrudApp\obj\Debug\net6.0\Lab4CodeFirstCrudApp.pdb
+D:\LabAssignments\Lab4CodeFirstCrudApp\Lab4CodeFirstCrudApp\obj\Debug\net6.0\Lab4CodeFirstCrudApp.genruntimeconfig.cache
+D:\LabAssignments\Lab4CodeFirstCrudApp\Lab4CodeFirstCrudApp\obj\Debug\net6.0\ref\Lab4CodeFirstCrudApp.dll

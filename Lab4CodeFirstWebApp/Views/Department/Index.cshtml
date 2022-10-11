@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Lab4CodeFirstCrudApp.Department>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-8 offset-2">
+            <h1 class="text-center text-primary">Department</h1>
+            <a class="btn btn-sm btn-success m-2" asp-controller="Department" asp-action="Create">Create</a>
+            <p class="text-center text-success">@TempData["error"]</p>
+            <table class="table table-bordered">
+                <tr class="text-center">
+                    <th>Dept Id</th>
+                    <th>Dept Name</th>
+                    <th>Action</th>
+                </tr>
+                @foreach (var d in Model)
+                {
+                    <tr class="text-center">
+                        <td>@d.DeptId</td>
+                        <td>@d.DeptName</td>
+                        <td>
+                            <a class="btn btn-sm btn-warning" asp-controller="Department" asp-action="Edit"
+                            asp-route-id="@d.DeptId">Edit</a>
+                            <a class="btn btn-sm btn-danger" asp-controller="Department" asp-action="Delete"
+                           asp-route-id="@d.DeptId" onclick="return confirm('Are sure wants to delete?');">Delete</a>
+                        </td>
+
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial"/>
+}

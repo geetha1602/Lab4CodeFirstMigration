@@ -1,0 +1,28 @@
+﻿@model Lab4CodeFirstCrudApp.Department;
+
+@{
+    ViewData["Title"] = "Edit";
+}
+<div class="row justify-content-md-center">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                Edit Department
+            </div>
+            <div class="card-body">
+                <form method="post" asp-action="Edit">
+                    <div class="form-group">
+                        <label asp-for="DeptName">Dept Name</label>
+                        <input type="hidden" asp-for="DeptId" />
+                       <input type="text" asp-for="DeptName" class="form-control" placeholder="Enter Department Name"/>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-sm btn-primary float-right" style="margin-top:10px">Update</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+

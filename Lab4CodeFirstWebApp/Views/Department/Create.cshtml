@@ -1,0 +1,28 @@
+﻿@model Lab4CodeFirstCrudApp.Department;
+
+@{
+    ViewData["Title"] = "Create";
+}
+<div class="row justify-content-md-center">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                Add Department
+            </div>
+            <div class="card-body">
+                <form method="post" asp-action="Create">
+                    <div class="form-group">
+                        <label asp-for="DeptName">Dept Name</label>
+                       <input type="text" asp-for="DeptName" class="form-control" placeholder="Enter Department Name"/>
+                        <span asp-validation-for="DeptName" class="text-danger">@TempData["ErrorMessage"]</span>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-sm btn-primary float-right" style="margin-top:10px">Add</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,71 @@
+﻿@model IEnumerable<Lab4CodeFirstCrudApp.Employee>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-8 offset-2">
+            <h1 class="text-center text-primary">Employee</h1>
+            <a class="btn btn-sm btn-success m-2" asp-controller="Employee" asp-action="Create">Create</a>
+            <p class="text-center text-success">@TempData["error"]</p>
+            <table class="table table-bordered">
+                <tr class="text-center">
+                    <th>Emp Id</th>
+                    <th>Emp Name</th>
+                    <th>Address</th>
+                    <th>Salary</th>
+                    <th>Image</th>
+                    <th>Dept Id</th>
+                    <th>Action</th>
+                </tr>
+                @foreach (var d in Model)
+                {
+                    <tr class="text-center">
+                        <td>@d.EmpId</td>
+                        <td>@d.EmpName</td>
+                        <td>@d.Address</td>
+                        <td>@d.Salary</td>
+                        @*<td><img src="@d.ImagePath" height="100px;" width="100px;"/></td>*@
+                        <td><img class="card-img-top" src="~/Uploads/@d.ImagePath" asp-append-version="true" alt="@d.EmpName" height="40px;" width="40px;" /></td>
+                        <td>@d.Department.DeptName</td>
+                        @*<td><select asp-for="Cid" asp-items="@(new SelectList(ViewBag.message,"Cid","Cname"))"></select></td>*@
+                        <td>
+                            <a class="btn btn-sm btn-warning" asp-controller="Employee" asp-action="Edit"
+                           asp-route-id="@d.EmpId">Edit</a>
+                            <a class="btn btn-sm btn-danger" asp-controller="Employee" asp-action="Delete"
+                           asp-route-id="@d.EmpId"  onclick="return confirm('Are sure wants to delete?');">Delete</a>
+                        </td>
+
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+        $('#dellink').click(function () {
+            autoOpen: false,
+                modal: true,
+                    resizable: false,
+                        buttons: {
+                "Ok": function () {
+                    var id = $(this).data("id");
+                    window.location.href = '/Assignments/Delete/' + id;
+                },
+                "Cancel": function (e) {
+                    $(this).dialog("close");
+                }
+            },
+
+        });
+    </script>
+        
+    <partial name="_ValidationScriptsPartial" />
+}
+
+
